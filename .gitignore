@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML artifacts — results are reported via job id + commit, not committed blobs
+wandb/
+*.pt
+*.safetensors
+
+# Claude Code: keep settings.json tracked so the plugin registration is
+# valid on every machine, not just this one (governance establish step 8).
+.claude/*
+!.claude/settings.json
